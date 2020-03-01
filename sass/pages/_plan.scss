@@ -1,0 +1,65 @@
+.task-manager {
+  &__text {
+    @include respond(phone) {
+      margin-bottom: 8rem;
+    }
+  }
+  padding-bottom: 25rem;
+  &__photo {
+    padding-left: 0;
+    @include respond(phone) {
+      padding-left: 12px;
+    }
+  }
+
+  &__img {
+    width: 85%;
+    border: 1.5rem solid whitesmoke;
+    border-radius: 2rem;
+    @include respond(phone) {
+      width: 100%;
+      margin-bottom: 5rem;
+    }
+    &--safty {
+      display: block;
+      float: right;
+    }
+    &--risk {
+      display: block;
+      float: right;
+    }
+  }
+  &--document {
+    background-color: #f7ffff;
+  }
+  &--professional {
+    padding-bottom: 15rem;
+    background-color: #f7ffff;
+    @include respond(phone) {
+      padding-bottom: 6rem;
+    }
+  }
+
+  &--risk {
+    padding-bottom: 15rem;
+    @include respond(phone) {
+      padding-bottom: 6rem;
+    }
+  }
+
+  &--real-time {
+    padding-bottom: 15rem;
+    background-color: #f7ffff;
+    @include respond(phone) {
+      padding-bottom: 6rem;
+    }
+  }
+}
+
+.safty {
+  padding-bottom: 15rem;
+}
+
+.plan-advantage {
+  padding-top: 15rem;
+}

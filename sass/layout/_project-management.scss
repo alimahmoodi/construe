@@ -1,0 +1,63 @@
+.project-management {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+
+    position: relative;
+    // height: 100rem;
+    margin-bottom: 15rem;
+    background-color: #fafdfd;
+    &__img-box {
+        position: relative;
+        // top:30rem;
+        // height: 35rem;
+        @include respond(phone) {
+            // top: -75rem;
+        }
+    }
+    &__text {
+        float: right !important;
+        // position: absolute;
+        right: 2rem;
+        margin-top: 12rem;
+        @include respond(tab-land) {
+            right: -2rem;
+        }
+    }
+    &__img {
+        position: absolute;
+        // width: 29rem;
+        width: 46%;
+        @include respond(phone) {
+            // width: 21.25rem;
+            position: relative;
+        }
+        &--1 {
+            @include respond(tab-land) {
+                left: 4.3rem;
+            }
+        }
+        &--2 {
+            left: 20rem;
+            top: 5rem;
+            @include respond(tab-land) {
+                left: 20rem;
+            }
+            @include respond(phone) {
+                left: -2rem;
+            }
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+    }
+    &__item {
+        margin-bottom: 3rem;
+        @include respond(phone) {
+            margin-bottom: 7rem;
+        }
+    }
+}

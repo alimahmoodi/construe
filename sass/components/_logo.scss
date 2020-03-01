@@ -1,0 +1,21 @@
+.main-logo{
+    &__header{
+        position: absolute;
+        left: 10rem;
+        top: 3rem;
+        @include respond(tab-land){
+            left: 6rem;
+        }
+        
+    }
+    &__footer{
+
+    }
+    &__img{
+        display: inline-block;
+        width: 24rem;
+        @include respond(tab-land){
+            width: 19rem;
+        }
+    }
+}

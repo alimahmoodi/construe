@@ -1,0 +1,179 @@
+.form {
+    &__heading {
+        position: absolute;
+        top: -3rem;
+        left: 25%;
+        color: white;
+        transform: translateX(-50%);
+        text-transform: uppercase;
+        &--sign-up {
+            left: 50%;
+            @include respond(phone) {
+                left: 75%;
+            }
+        }
+    }
+    &__log-in {
+        border-radius: 2rem 0 0 2rem;
+    }
+    &__sign-up {
+        border-radius: 0rem 2rem 2rem 0rem;
+    }
+
+    &__log-in-inputs {
+        // background-color: white;
+        padding: 1.5rem;
+        border-radius: 1rem 0 0 1rem;
+    }
+    &__sign-up-inputs {
+        // background-color: white;
+        padding: 1.5rem;
+        border-radius: 0rem 1rem 1rem 0rem;
+    }
+    &__container {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        border-radius: 1rem;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @include respond(phone) {
+            top: 35%;
+        }
+    }
+    &__input {
+        width: 28rem;
+        padding: 1rem 1.5rem;
+        display: block;
+        border: none;
+        border-bottom: 1px solid rgba($color-text, 0.3);
+        background-color: transparent;
+        @include respond(phone) {
+            width: 32rem;
+        }
+        &--button-main {
+            border: none;
+            border-radius: 7px;
+            background-color: $primary-color;
+            color: white;
+            text-transform: capitalize;
+        }
+        &--button-google {
+            border: none;
+            border-radius: 8px;
+            background-color: #f14336;
+            color: white;
+            padding: 1.3rem;
+            text-transform: capitalize;
+        }
+        &::-webkit-input-placeholder {
+            color: rgba($color-text, 0.5);
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+    &__group {
+        margin-bottom: 3.5rem;
+    }
+    &__forget {
+        font-size: 1.5rem;
+        font-style: italic;
+        color: gray;
+        margin-bottom: 1.5rem;
+        margin-top: 3rem;
+        display: block;
+    }
+
+    &__google-container {
+        position: relative;
+    }
+    &__google-logo {
+        position: absolute;
+        left: 4%;
+        top: 23%;
+        width: 20px;
+    }
+
+    &__or {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+        display: block;
+        position: relative;
+        color: rgba($color: gray, $alpha: 0.5);
+        @include respond(phone) {
+            font-size: 2rem;
+        }
+        &::after {
+            content: "";
+            width: 12rem;
+            display: inline-block;
+            background-color: rgba($color: gray, $alpha: 0.5);
+            height: 1px;
+            margin-left: 5px;
+            @include respond(phone) {
+                width: 14rem;
+            }
+        }
+        &::before {
+            content: "";
+            width: 12rem;
+            display: inline-block;
+            background-color: rgba($color: gray, $alpha: 0.5);
+            height: 1px;
+            margin-right: 5px;
+            @include respond(phone) {
+                width: 14rem;
+            }
+        }
+    }
+    &__family {
+        height: 100%;
+        background-color: white;
+    }
+
+    &__label {
+        // cursor: pointer;
+        display: block;
+        @include respond(phone) {
+            position: absolute;
+        }
+    }
+
+    &__select:not(:checked) + label {
+        filter: grayscale(100%);
+    }
+
+    &__select:checked + #form__label--log-in {
+        box-shadow: 1.3rem 0rem 2rem rgba(0, 0, 0, 0.2);
+        z-index: 10;
+    }
+    &__select:checked + #form__label--sign-up {
+        box-shadow: -1.3rem 0rem 2rem rgba(0, 0, 0, 0.2);
+        z-index: 10;
+    }
+
+    &__select:checked + #form__label--sign-up &__heading {
+        left: 75%;
+    }
+
+    &__select:not(:checked) + #form__label--log-in &__heading {
+        left: 50%;
+        filter: blur(1px);
+        @include respond(phone) {
+            left: 25%;
+        }
+    }
+
+    &__select:not(:checked) + #form__label--sign-up &__heading {
+        filter: blur(1px);
+    }
+
+    &__select {
+        display: none;
+    }
+}

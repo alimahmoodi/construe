@@ -1,0 +1,28 @@
+.download-app{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:55%;
+    @include respond(phone){
+        display: flex;
+        margin-top: 3rem;
+        top: 70%;
+    }
+    &__link{
+        @include respond(phone){
+            display: block;
+        }
+    }
+    &__img{
+        width: 16rem;
+        margin: 0 3rem;
+        @include respond(phone){
+            width: 17rem;
+            margin:0 1rem;
+        }
+        &--footer{
+            margin: 2rem 0;
+            
+        }
+    }
+}

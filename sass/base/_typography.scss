@@ -1,0 +1,192 @@
+body {
+  // font-family: "lato", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.heading-primary {
+  text-align: center;
+  font-size: 4rem;
+  color: black;
+  &--main {
+    font-size: 5.5rem;
+    color: $color-white;
+    margin-bottom: 2rem;
+  }
+  &--advantage {
+    font-size: 3.3rem;
+    @include respond(phone) {
+      font-size: 4rem;
+    }
+    &-item {
+      font-size: 2rem;
+      @include respond(phone) {
+        font-size: 3.5rem;
+      }
+    }
+  }
+
+  &--management {
+    text-align: left;
+    @include respond(phone) {
+      display: none;
+    }
+    &--document {
+      @include respond(phone) {
+        padding: 0 2rem;
+      }
+    }
+  }
+  &--whyus {
+    // text-align: left;
+    font-size: 2rem;
+    @include respond(phone) {
+      font-size: 3.5rem;
+    }
+  }
+
+  &--get-start {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--task-manager {
+    text-align: left;
+  }
+}
+
+.heading-secondary {
+  font-size: 1.7rem;
+  &--management {
+    font-size: 1.8rem;
+    @include respond(phone) {
+      font-size: 3.5rem;
+    }
+  }
+  &--footer {
+    color: white;
+    font-size: 2rem;
+    @include respond(phone) {
+      font-size: 3.75rem;
+    }
+  }
+  &--document {
+    @include respond(phone) {
+      font-size: 3.5rem;
+    }
+  }
+
+  &--pricing {
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  &--accordion {
+    color: black;
+    margin: 2rem 0;
+    font-size: 1.8rem;
+    text-align: left;
+  }
+}
+
+.heading-text {
+  text-align: center;
+  font-size: 1.7rem;
+  color: $color-text;
+  &--header {
+    padding: 0 6rem;
+    color: white;
+    @include respond(phone) {
+      font-size: 2.2rem;
+    }
+  }
+  &--advantage {
+    color: $color-text;
+    padding: 1rem 10rem;
+    @include respond(phone) {
+      padding: 3rem 0;
+      font-size: 2.1rem;
+    }
+    &-item {
+      color: $color-text;
+      font-size: 1.6rem;
+      @include respond(phone) {
+        font-size: 2.3rem;
+      }
+      &--whyus {
+        text-align: left;
+        padding-left: 8rem;
+        padding-right: 2rem;
+        @include respond(tab-land) {
+          font-size: 1.8rem;
+          text-align: justify;
+        }
+        @include respond(phone) {
+          font-size: 2.25rem;
+          padding-left: 1rem;
+          padding-right: 2rem;
+        }
+      }
+    }
+  }
+  &--management-item {
+    text-align: start;
+    color: $color-text;
+    font-size: 1.5rem;
+    padding-right: 8rem;
+    @include respond(phone) {
+      font-size: 2.25rem;
+      padding-right: 0;
+      text-align: justify;
+    }
+  }
+
+  &--pricing {
+    font-size: 1.4rem;
+    text-align: center;
+    @include respond(phone) {
+      font-size: 2.2rem;
+    }
+  }
+
+  &--accordion {
+    text-align: left;
+    color: $color-text;
+  }
+
+  &--task-manager {
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    padding-right: 10rem;
+    @include respond(phone) {
+      padding-right: 0;
+      font-size: 2.25rem;
+    }
+  }
+
+  &--safty {
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    padding-left: 10rem;
+    margin-right: 0;
+    @include respond(phone) {
+      padding-left: 0;
+      font-size: 2.25rem;
+    }
+  }
+
+  &--risk {
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    padding-left: 10rem;
+    margin-right: 0;
+    @include respond(phone) {
+      padding-left: 0;
+      font-size: 2.25rem;
+    }
+  }
+}

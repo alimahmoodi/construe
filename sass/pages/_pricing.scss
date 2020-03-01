@@ -1,0 +1,44 @@
+.accordion{
+    margin-bottom: 15rem;
+    &__list{
+        @include respond(phone){
+            width: 90%;
+            margin:0 auto;
+        }
+    }
+    &__item{
+        border:1px solid black;
+        display: flex;
+        cursor: pointer;
+        margin-bottom: 1.5rem ;
+        
+    }
+
+    &__text{
+        width: 93%;
+    }
+
+    &__paragraph{
+        height: 0;
+        transition: height .3s;
+        overflow: hidden;
+    }
+
+    &__plus{
+        width: 7%;
+        font-size: 4rem;
+        text-align: center;
+        color:$primary-color;
+    }
+    
+
+
+    // &__plus:hover ~ &__text &__paragraph{
+    //     height: 5rem;
+    //     visibility: visible;
+    //     margin-bottom: 2rem;
+    // }
+    // &__plus:hover ~ .accordion__text h2{
+    //     color:$primary-color;
+    // }
+}

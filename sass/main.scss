@@ -1,0 +1,26 @@
+@import "abstract/variables";
+@import "abstract/mixin";
+
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "layout/grids";
+@import "layout/header";
+@import "layout/project-management";
+@import "layout/phone-nav.scss";
+@import "layout/advantage";
+
+@import "components/button";
+@import "components/downloadApp";
+@import "components/advantage-item";
+@import "components/logo";
+@import "components/social-logo";
+@import "components/plus";
+@import "components/user-opinion";
+@import"components/form";
+
+@import "pages/home";
+@import "pages/pricing";
+@import "pages/plan";
+@import "pages/register";

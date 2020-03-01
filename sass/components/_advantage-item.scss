@@ -1,0 +1,95 @@
+.advantage{
+    &__img-and-heading{
+        display: flex;
+    }
+    &__item-header{
+        padding-top:2rem;
+
+        @include respond(phone){
+            padding-left: 2rem;
+        }
+    }
+    &__item{
+        @include respond(phone){
+            margin-bottom: 7rem;
+        }
+        &-logo{
+            
+            &-img{
+                display:block;
+                height: 6rem;
+                width: 6rem;
+                margin: 0 auto;
+                background-color: #F2FBFB;
+                padding: 1rem;
+                border-radius: 1rem;
+                @include respond(phone){
+                    height: 10.625rem;
+                    width: 10.625rem;
+                    // margin-bottom: 6rem;
+                }
+
+                
+            }
+            &--whyus{
+                 transform: translateX(-2.5rem);
+                 @include respond(phone){
+                     transform: translateX(0);
+                     padding-left: 1rem;
+                     margin-bottom: 2.5rem;
+                 }
+            }
+            
+        }
+    }
+}
+
+.advantage-pricing{
+    &__price{
+        text-align: center;
+        color: purple;
+        margin: 2rem 0 1rem 0;
+        font-size: 5rem;
+        font-weight: 100;
+    }
+
+    &__option{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        background-color: transparent;
+        transition: all .2s;
+        @include respond(phone){
+            background-color: whitesmoke;
+            margin-bottom: 2rem;
+            border-radius: 2rem;
+        }
+        &-heading{
+            border-bottom: 1px solid #e4e4e4;
+            display: inline-block;
+            padding-bottom: 3rem;
+            
+        }
+    }
+
+    &__option:hover{
+        transform: scale(1.06);
+        background-color: whitesmoke;
+        box-shadow: 0 1rem 8px rgba(#000000,.3);
+    }
+
+    &__list{
+        list-style-type:disc !important;
+        margin:2rem 0 5rem 2rem;
+    }
+
+    &__item{
+        text-align: left !important;
+        margin: 1.5rem 0rem;
+        color: $color-text;
+    }
+
+    &__choose{
+        text-align: center;
+    }
+
+}

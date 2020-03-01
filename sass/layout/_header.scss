@@ -1,0 +1,70 @@
+.header{
+    height: 68rem;
+    background-image:linear-gradient(to bottom,rgba($primary-color,.6),rgba($secondary-color,.6)),url("../img/hero-1x.jpg");
+
+    &-pricing{
+        background-image:linear-gradient(to bottom,rgba($primary-color,.6),rgba($secondary-color,.6)),url("../img/3246.jpg");
+    }
+    &--plan{
+        background-image:linear-gradient(to bottom,rgba($primary-color,.6),rgba($secondary-color,.6)),url("../img/plan.jpg");
+    }
+
+    &--register{
+        background-image:linear-gradient(to bottom,rgba($primary-color,.6),rgba($secondary-color,.6)),url("../img/workers.jpg");
+        min-height: 100vh;
+    }
+
+   
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    &__heading{
+    @include absCenter;
+    top:40% !important;
+    @include respond(phone){
+        width: 90%;
+        top:53% !important;
+    }
+    }
+
+    &__logo{
+            position: absolute;
+            left: 10rem;
+            top: 3rem;
+        &-box{
+
+        }
+        &-img{
+            width: 21rem;
+        }
+    }
+
+    &__navigation{
+        color:$color-white;
+        position: absolute;
+        left: 50%;
+        top:5rem;
+        transform: translateX(-50%);
+        &-list{
+            display: flex;
+            list-style-type:none;
+        }
+        &-item{
+
+        }
+        &-link{
+            color:$color-white;
+            display: inline-block;
+            transition: all .1s;
+            
+            &:hover{
+                border-bottom: 3px solid $color-white;
+            }
+        }
+
+        @include respond(phone){
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,130 @@
+.users {
+  &__Specifications {
+    width: 40%;
+    margin: 0 auto;
+
+    &--task-manager {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin: 0;
+      @include respond(phone) {
+        justify-content: center;
+        display: block;
+      }
+    }
+
+    &--safty {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      margin: 0;
+    }
+  }
+  &__opinion {
+    position: relative;
+    width: $useropinion;
+    @include respond(phone) {
+      width: 45rem;
+    }
+
+    &--task-manager {
+      width: 90%;
+      margin-top: 8rem;
+      @include respond(phone) {
+        width: 100%;
+      }
+    }
+    &--safty {
+      width: 90%;
+      margin-top: 8rem;
+      margin-right: 0;
+      margin-left: auto;
+      direction: rtl;
+      @include respond(phone) {
+        width: 100%;
+        margin-bottom: 15rem;
+      }
+    }
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 3px solid #00acb3;
+    padding: 1rem;
+    &--task-manager {
+      width: 10rem;
+      padding: 4px;
+      border: 2px solid #00acb3;
+      @include respond(phone) {
+        width: 18rem;
+      }
+    }
+  }
+
+  &__img-box {
+    &--task-manager {
+      margin-right: 1.2rem;
+    }
+    &--safty {
+      margin-left: 1.2rem;
+    }
+  }
+
+  &__name-box {
+    &--task-manager {
+      @include respond(phone) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  &__name {
+    text-align: center;
+    &--task-manager {
+      @include respond(phone) {
+        font-size: 4rem;
+      }
+    }
+  }
+  &__title {
+    text-align: center;
+    color: $color-text;
+    font-size: 1.2rem;
+    &--task-manager {
+      @include respond(phone) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  &__opinion-text {
+    color: $color-text;
+    font-size: 1.6rem;
+    width: 90%;
+    margin: 1.5rem auto;
+    white-space: normal;
+
+    &--task-manager {
+      margin: 0;
+      border-left: 2px solid $color-text;
+      padding-left: 1rem;
+      @include respond(phone) {
+        width: 100%;
+        font-size: 2.6rem;
+      }
+    }
+    &--safty {
+      border-right: 2px solid $color-text;
+      padding-right: 1rem;
+      margin: 0;
+
+      @include respond(phone) {
+        width: 100%;
+        font-size: 2.6rem;
+      }
+    }
+  }
+}

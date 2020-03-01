@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Register</title>
+    </head>
+    <body>
+        <div class="phone-nav">
+            <input type="checkbox" class="phone-nav__checkbox" id="phone-nav__toggle" />
+            <label for="phone-nav__toggle" class="phone-nav__button">
+                <span class="phone-nav__icon">&nbsp;</span>
+            </label>
+
+            <nav class="phone-nav__navigation">
+                <ul class="phone-nav__list">
+                    <li class="phone-nav__item"><a href="#" class="phone-nav__link btn btn--phone-nav">home</a></li>
+                    <li class="phone-nav__item"><a href="index-pricing.html" class="phone-nav__link btn btn--phone-nav">pricing</a></li>
+                    <li class="phone-nav__item"><a href="index-plan.html" class="phone-nav__link btn btn--phone-nav">toturial</a></li>
+                    <li class="phone-nav__item"><a href="#" class="phone-nav__link btn btn--phone-nav">producs</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <header class="header header--register">
+            <div class="wrapper wrapper--header">
+                <nav class="header__navigation">
+                    <ul class="header__navigation-list">
+                        <li class="header__navigation-item"><a href="#" class="header__navigation-link btn btn--nav">home</a></li>
+                        <li class="header__navigation-item"><a href="index-pricing.html" class="header__navigation-link btn btn--nav">pricing</a></li>
+                        <li class="header__navigation-item"><a href="index-plan.html" class="header__navigation-link btn btn--nav">toturial</a></li>
+                        <li class="header__navigation-item"><a href="#" class="header__navigation-link btn btn--nav">producs</a></li>
+                    </ul>
+                </nav>
+                <div class="main-logo__header">
+                    <div class="header__logo-box">
+                        <img src="img/Construe.png" alt="logo" class="main-logo__img" />
+                    </div>
+                </div>
+                <div class="btn__login-container">
+                    <a href="#" class="btn btn--login">login/sign up</a>
+                </div>
+
+                <div class="form__container ">
+                    <input type="radio" name="form-select" class="form__select" id="form-select-1" checked />
+                    <label for="form-select-1" class="form__label" id="form__label--log-in">
+                        <div class="form__log-in form__family">
+                            <h2 class="heading-secondary form__heading u-center-text u-margin-bottom-small">log in</h2>
+                            <div class=" form__log-in-inputs">
+                                <form action="#" class="form form--login">
+                                    <div class="form__group">
+                                        <input type="text" name="" id="" class="form__input" placeholder="Phone number or Email address" />
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="password" name="" id="" class="form__input" placeholder="Password" />
+                                    </div>
+                                    <div class="form__group">
+                                        <label class="form__forget" for="">forget your password?</label>
+                                        <input type="button" value="log in" class="form__input form__input--button-main" name="log in" id="" />
+                                    </div>
+                                    <span class="form__or">or</span>
+                                    <div class="form__group">
+                                        <div class="form__google-container">
+                                            <input
+                                                type="button"
+                                                value="Log In with google"
+                                                class="form__input form__input--button-google"
+                                                name="log in with google"
+                                                id=""
+                                            />
+                                            <img src="svg/search.svg" alt="google" class="form__google-logo" />
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </label>
+
+                    <input type="radio" name="form-select" class="form__select" id="form-select-2" />
+                    <label for="form-select-2" class="form__label" id="form__label--sign-up">
+                        <div class="form__sign-up form__family">
+                            <h2 class="heading-secondary form__heading form__heading--sign-up u-center-text u-margin-bottom-small">sign up</h2>
+                            <div class="form__sign-up-inputs">
+                                <form action="#" class="form form--sign-up">
+                                    <div class="form__group">
+                                        <input type="text" name="" id="" class="form__input" placeholder="Full name" />
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="text" name="" id="" class="form__input" placeholder="Email address" />
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="text" name="" id="" class="form__input" placeholder="Phone number" />
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="text" name="" id="" class="form__input" placeholder="Password" />
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="text" name="" id="" class="form__input" placeholder="Confirm password" />
+                                    </div>
+                                    <div class="form__group">
+                                        <input type="button" value="Sign Up" class="form__input form__input--button-main" name="log in" id="" />
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </header>
+        <script src="java script/form.js"></script>
+    </body>
+</html>
